@@ -2,7 +2,7 @@
 import { onMounted, ref } from "vue";
 import { useEventListener } from "@vueuse/core";
 
-const messages = ref([]);
+const messages: any = ref([]);
 const origin = ref("");
 
 useEventListener(window, "message", (message: any) => {
