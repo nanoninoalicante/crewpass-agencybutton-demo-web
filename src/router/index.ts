@@ -8,6 +8,11 @@ const router = createRouter({
             name: "agencyintegration-dev",
             component: () => import("../views/AgencyIntegrationView.vue"),
         },
+        {
+            path: "/agency-prod",
+            name: "agencyintegration-prod",
+            component: () => import("../views/AgencyIntegrationProdView.vue"),
+        },
     ],
 });
 
